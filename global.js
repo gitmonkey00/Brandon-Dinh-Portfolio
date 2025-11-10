@@ -10,7 +10,7 @@ let pages = [
 // Base path for GitHub Pages or localhost
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"
-  : "/Camille-Tran-Website/";
+  : "/Brandon-Dinh-Portfolio/";
 
 // Create <nav>
 let nav = document.createElement("nav");
