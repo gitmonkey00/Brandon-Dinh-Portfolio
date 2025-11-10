@@ -4,7 +4,7 @@ let pages = [
   { url: "projects/", title: "Projects" },
   { url: "contact/", title: "Contact" },
   { url: "resume/", title: "Resume" },
-  { url: "https://github.com/Ctt011", title: "GitHub" },
+  { url: "https://github.com/gitmonkey00", title: "GitHub" },
 ];
 
 // Base path for GitHub Pages or localhost
