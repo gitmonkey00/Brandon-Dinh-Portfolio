@@ -1,10 +1,10 @@
 [
   {
-    "title": "Cloud-Native Multimodal RAG System",
+    "title": "Parameterized ALU Design and Verification",
     "slug": "multimodal-rag-system",
-    "description": "Building a multimodal Retrieval-Augmented Generation system combining textual and visual data for context-aware food recommendations.",
-    "fullDescription": "Currently building a multimodal Retrieval-Augmented Generation (RAG) system that combines textual and visual data to generate context-aware food recommendations. This project leverages AWS Bedrock, S3, and FAISS for cloud-native data storage, vectorization, and scalable similarity search. The system features a Streamlit-based chatbot that enables cross-modal search through Claude-Sonnet Multimodal LLM, allowing users to query with both text and images.",
-    "techStack": ["AWS Bedrock", "FAISS", "Streamlit", "Python", "AWS S3", "Claude-Sonnet LLM"],
+    "description": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
+    "fullDescription": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
+    "techStack": ["SystemVerilog", "UVM", "RTL", "Functional Verification", "Constrained Randomization", "Test Coverage"],
     "tags": ["Machine Learning", "Cloud Computing", "Data Engineering","AWS"],
     "year": "2025",
     "image": "images/architecture copy.png",
