@@ -117,12 +117,6 @@ function showProjectDetail(project) {
           <h2>What I Learned</h2>
           <p>${project.learnings}</p>
         </section>
-
-      ${project.code ? `
-        <section class="detail-section">
-          <h2>Code Involved</h2>
-          <p>${project.code}</p>
-        </section>
       ` : ''}
     </article>
   `;

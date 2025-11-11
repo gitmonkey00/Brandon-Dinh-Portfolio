@@ -13,7 +13,6 @@
     "liveUrl": "",
     "challenges": "Integrating multimodal data sources and ensuring accurate cross-modal retrieval while maintaining low latency for real-time recommendations.",
     "learnings": "Gained hands-on experience with AWS cloud services, vector databases, and the practical implementation of RAG architectures for production use cases.",
-    "code" : "This is a test code"
   },
   {
     "title": "VHDL 4-Bit Calculator with Testbenching and FSM Design",
