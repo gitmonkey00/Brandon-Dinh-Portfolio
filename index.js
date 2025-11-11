@@ -25,7 +25,7 @@ function renderLatestProjects(projectsList) {
     article.addEventListener('click', () => {
       const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
         ? "/"
-        : "/Camille-Tran-Website/";
+        : "/Brandon-Dinh-Portfolio/";
       window.location.href = BASE_PATH + 'projects/#' + project.slug;
     });
 
