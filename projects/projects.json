@@ -1,7 +1,7 @@
 [
   {
     "title": "Parameterized ALU Design and Verification",
-    "slug": "ALU Design and Verification",
+    "slug": "multimodal-rag-system",
     "description": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
     "fullDescription": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
     "techStack": ["SystemVerilog", "UVM", "RTL", "Functional Verification", "Constrained Randomization", "Test Coverage"],
@@ -17,7 +17,7 @@
   },
   {
     "title": "VHDL 4-Bit Calculator with Testbenching and FSM Design",
-    "slug": "VHDL 4-Bit Calculator",
+    "slug": "aws-big-data-pipeline",
     "description": "Produced and implemented a 4-bit calculator on FPGA using VHDL, supporting addition and accumulator clear (AC) operations with finite state machine (FSM) control logic.",
     "fullDescription": "Produced and implemented a 4-bit calculator on FPGA using VHDL, supporting addition and accumulator clear (AC) operations with finite state machine (FSM) control logic. Created a comprehensive VHDL testbench to verify functional correctness of “Add” and “AC” operations, including state transitions and output waveform validation. Utilized Xilinx Vivado for simulation and synthesis; performed waveform analysis to debug and verify internal states using testbench stimulus and scope probing. Mapped the design onto a physical FPGA board with a custom constraints file to interface slide switches, LEDs, pushbuttons, and a 100MHz clock.",
     "techStack": ["VHDL", "FPGA", "Vivado","Finite State Machine", "Testbenching"],
@@ -32,7 +32,7 @@
   },
   {
     "title": "Interactive Embedded Prop: Motion-Activated Detonator",
-    "slug": "Motion-Activated Detonator PCB",
+    "slug": "azure-data-pipeline",
     "description": "Fabricated an interactive detonator prop that combines embedded systems, 3D design, and software engineering through the use of a custom designed PCB along with experience in designing and prototyping.",
     "fullDescription": "Fabricated an interactive detonator prop that combines embedded systems, 3D design, and software engineering through the use of a custom designed PCB along with experience in designing and prototyping. System Integration: Integration of audio components, such as the DFplayer Mini MP3 player, into a custom PCB.",
     "techStack": ["PCB Design", "Embedded", "Digital Logic", "UART", "Full Stack Development"],
