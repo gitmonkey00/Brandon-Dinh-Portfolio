@@ -118,6 +118,78 @@ function showProjectDetail(project) {
           <p>${project.learnings}</p>
         </section>
       ` : ''}
+      function renderCodeSection(container, project) {
+  // Build section shell
+  const section = document.createElement('section');
+  section.className = 'code-section';
+  section.innerHTML = `
+    <h2>Code</h2>
+    <hr>
+    <div class="code-tabs" role="tablist">
+      <button class="code-tab" role="tab" aria-selected="true" data-kind="file" data-title="design.sv">design.sv</button>
+      <button class="code-tab" role="tab" aria-selected="false" data-kind="file" data-title="testbench.sv">testbench.sv</button>
+      <button class="code-tab" role="tab" aria-selected="false" data-kind="file" data-title="output.log">output.log</button>
+      <button class="code-tab" role="tab" aria-selected="false" data-kind="image" data-title="EDA Playground Screenshot">EDA Playground Screenshot</button>
+    </div>
+    <div class="code-view">
+      <div class="code-toolbar">
+        <div class="code-title"></div>
+        <div class="code-actions"><a class="open-raw" href="#" target="_blank" rel="noopener">Open raw</a></div>
+      </div>
+      <div class="code-pane"></div>
+    </div>
+  `;
+  container.appendChild(section);
+
+  // Elements
+  const titleEl = section.querySelector('.code-title');
+  const paneEl  = section.querySelector('.code-pane');
+  const openEl  = section.querySelector('.open-raw');
+  const tabsEl  = section.querySelectorAll('.code-tab');
+
+  // Load text from hidden <script type="text/plain"> blocks
+  const DESIGN_SRC = document.getElementById('code-design-sv')?.textContent || '';
+  const TB_SRC     = document.getElementById('code-testbench-sv')?.textContent || '';
+  const OUTLOG_SRC = document.getElementById('code-output-log')?.textContent || '';
+
+  const esc = (s) => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+
+  function codeBlock(text) {
+    return `<pre><code>${text.split('\n').map(l=>`<span>${esc(l)}</span>`).join('\n')}</code></pre>`;
+  }
+
+  function show(kind, label) {
+    titleEl.textContent = label;
+    if (kind === 'file' && label === 'design.sv') {
+      openEl.href = 'design.sv';
+      paneEl.innerHTML = codeBlock(DESIGN_SRC);
+    } else if (kind === 'file' && label === 'testbench.sv') {
+      openEl.href = 'testbench.sv';
+      paneEl.innerHTML = codeBlock(TB_SRC);
+    } else if (kind === 'file' && label === 'output.log') {
+      openEl.href = 'output.log';
+      paneEl.innerHTML = codeBlock(OUTLOG_SRC) +
+        `<div class="code-caption"><strong>Tool:</strong> EDA Playground (QuestaSim) · <strong>Run:</strong> run -all · <strong>Tests:</strong> 205 pass / 0 fail · <strong>Coverage:</strong> 89.6% · <strong>Errors/Warnings:</strong> 0 / 1 · <strong>Elapsed:</strong> 1s</div>`;
+    } else if (kind === 'image') {
+      // Replace with your real image path
+      const imgPath = '/assets/images/eda-playground-alu.png';
+      openEl.href = imgPath;
+      paneEl.innerHTML = `<img class="embed-image" src="${imgPath}" alt="EDA Playground screenshot showing testbench.sv, design.sv, and output log">`;
+    }
+  }
+
+  tabsEl.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabsEl.forEach(b => b.setAttribute('aria-selected','false'));
+      btn.setAttribute('aria-selected','true');
+      show(btn.dataset.kind, btn.dataset.title);
+    });
+  });
+
+  // initial
+  show('file','design.sv');
+}
+
     </article>
   `;
 }
