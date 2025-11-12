@@ -440,25 +440,3 @@ form button:hover {
    RESUME PAGE - resume/index.html
    Note: Additional styles in inline <style> tag
    ============================================ */
-
-/* === Code Section (Portfolio) === */
-.code-section { margin-top: 32px; }
-.code-tabs { display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 12px; }
-.code-tab {
-  appearance:none; border:2px solid #e7d9f7; background:#fff; padding:8px 12px;
-  border-radius:10px; cursor:pointer; font-weight:700;
-}
-.code-tab[aria-selected="true"] { border-color:#c06bff; box-shadow:0 2px 0 rgba(173,59,255,.12); }
-.code-view { border:1px solid #e7d9f7; border-radius:12px; background:#fff; overflow:hidden; }
-.code-toolbar { display:flex; justify-content:space-between; align-items:center; padding:10px 14px; border-bottom:1px solid #e7d9f7; background:linear-gradient(#fff,#fbf7ff); }
-.code-title { font-weight:800; }
-.code-actions a { color:#ad3bff; text-decoration:none; font-weight:700; }
-.code-pane { max-height:520px; overflow:auto; }
-
-.code-pane pre { margin:0; padding:16px 20px; background:#0d0a1a; color:#efe9ff; font:13px/1.5 SFMono-Regular,Consolas,Menlo,Monaco,monospace; }
-.code-pane code { display:block; counter-reset:ln; }
-.code-pane code span { display:block; padding-left:38px; position:relative; }
-.code-pane code span::before { counter-increment:ln; content:counter(ln); position:absolute; left:0; width:28px; text-align:right; color:#8c82a7; }
-
-.code-caption { background:#faf6ff; border-top:1px solid #e7d9f7; padding:10px 14px; font-size:13px; color:#655c72; }
-.embed-image { display:block; max-width:100%; height:auto; }
