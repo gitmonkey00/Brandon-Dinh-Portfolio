@@ -1,6 +1,6 @@
 [
   {
-    "title": "Parameterized ALU Design and Verification",
+    "title": "SystemVerilog ALU Design and Verification",
     "slug": "multimodal-rag-system",
     "description": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
     "fullDescription": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
