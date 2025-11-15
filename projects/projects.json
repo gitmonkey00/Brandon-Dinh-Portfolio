@@ -15,19 +15,19 @@
     "learnings": "Gained hands-on experience with AWS cloud services, vector databases, and the practical implementation of RAG architectures for production use cases.",
     "sourceFiles": [
       {
-        "filename": "alu.sv",
+        "filename": "design.sv",
         "language": "systemverilog",
-        "path": "source-code/alu-design-verification/alu.sv"
+        "path": "source-code/alu-design-verification/design.sv"
       },
       {
-        "filename": "alu_tb.sv",
+        "filename": "testbench.sv",
         "language": "systemverilog",
-        "path": "source-code/alu-design-verification/alu_tb.sv"
+        "path": "source-code/alu-design-verification/testbench.sv"
       },
       {
-        "filename": "alu_pkg.sv",
+        "filename": "output.sv",
         "language": "systemverilog",
-        "path": "source-code/alu-design-verification/alu_pkg.sv"
+        "path": "source-code/alu-design-verification/output.sv"
       },
       {
         "filename": "alu_interface.sv",
