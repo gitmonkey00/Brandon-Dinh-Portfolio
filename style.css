@@ -398,6 +398,148 @@ nav a:hover {
   font-weight: 500;
 }
 
+/* ============================================
+   CODE VIEWER - Horizontal Tabs Layout
+   Shows source code files in tabbed interface
+   Used in project detail pages
+   ============================================ */
+
+/* Main container for code viewer */
+.code-viewer-container {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+/* Horizontal tab list at the top */
+.code-tabs {
+  display: flex;
+  background-color: oklch(from var(--color-accent) 97% 2% h);
+  border-bottom: 1px solid var(--border-color);
+  overflow-x: auto;
+  /* Allow horizontal scrolling on mobile */
+  scrollbar-width: thin;
+}
+
+/* Individual tab button */
+.code-tab-button {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+.code-tab-button:hover {
+  background-color: oklch(from var(--color-accent) 92% 3% h);
+  opacity: 1;
+}
+
+/* Active tab styling */
+.code-tab-button.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+  background-color: var(--background-color);
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* Tab content panels */
+.code-tab-content {
+  display: none;
+}
+
+.code-tab-content.active {
+  display: block;
+}
+
+/* Code display area */
+.code-display {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  overflow-x: auto;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.code-display pre {
+  margin: 0;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Individual code lines with line numbers */
+.code-line {
+  display: block;
+}
+
+.line-number {
+  display: inline-block;
+  width: 3rem;
+  color: #999;
+  text-align: right;
+  margin-right: 1rem;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.line-content {
+  color: var(--text-color);
+}
+
+/* Basic syntax highlighting colors */
+.syntax-keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.syntax-type {
+  color: #005cc5;
+}
+
+.syntax-string {
+  color: #032f62;
+}
+
+.syntax-comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.syntax-number {
+  color: #005cc5;
+}
+
+.syntax-function {
+  color: #6f42c1;
+}
+
+.syntax-operator {
+  color: #d73a49;
+}
+
+/* Responsive: Stack tabs on very small screens */
+@media (max-width: 480px) {
+  .code-tabs {
+    flex-wrap: wrap;
+  }
+
+  .code-tab-button {
+    flex: 1 1 auto;
+    min-width: fit-content;
+  }
+}
+
 
 /* ============================================
    CONTACT PAGE - contact/index.html

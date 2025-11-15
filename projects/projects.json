@@ -12,7 +12,29 @@
     "githubUrl": "",
     "liveUrl": "",
     "challenges": "Integrating multimodal data sources and ensuring accurate cross-modal retrieval while maintaining low latency for real-time recommendations.",
-    "learnings": "Gained hands-on experience with AWS cloud services, vector databases, and the practical implementation of RAG architectures for production use cases."
+    "learnings": "Gained hands-on experience with AWS cloud services, vector databases, and the practical implementation of RAG architectures for production use cases.",
+    "sourceFiles": [
+      {
+        "filename": "alu.sv",
+        "language": "systemverilog",
+        "path": "source-code/alu-design-verification/alu.sv"
+      },
+      {
+        "filename": "alu_tb.sv",
+        "language": "systemverilog",
+        "path": "source-code/alu-design-verification/alu_tb.sv"
+      },
+      {
+        "filename": "alu_pkg.sv",
+        "language": "systemverilog",
+        "path": "source-code/alu-design-verification/alu_pkg.sv"
+      },
+      {
+        "filename": "alu_interface.sv",
+        "language": "systemverilog",
+        "path": "source-code/alu-design-verification/alu_interface.sv"
+      }
+    ]
   },
   {
     "title": "VHDL 4-Bit Calculator with Testbenching and FSM Design",
