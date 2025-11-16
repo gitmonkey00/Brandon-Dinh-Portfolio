@@ -256,6 +256,19 @@ async function loadSourceFiles(sourceFiles) {
   const loadedFiles = [];
 
   for (const file of sourceFiles) {
+    const isImage = file.language === 'image';
+
+    if (isImage) {
+      loadedFiles.push({
+        filename: file.filename,
+        language: file.language,
+        code: '',
+        path: file.path,
+        isImage: true
+      });
+      continue;
+    }
+
     try {
       // Fetch file content from the path
       const response = await fetch(file.path);
@@ -268,7 +281,8 @@ async function loadSourceFiles(sourceFiles) {
       loadedFiles.push({
         filename: file.filename,
         language: file.language,
-        code: code
+        code: code,
+        path: file.path
       });
     } catch (error) {
       console.error(`Error loading ${file.filename}:`, error);
@@ -276,7 +290,8 @@ async function loadSourceFiles(sourceFiles) {
       loadedFiles.push({
         filename: file.filename,
         language: file.language,
-        code: `// Error loading file: ${error.message}`
+        code: `// Error loading file: ${error.message}`,
+        path: file.path
       });
     }
   }
@@ -373,18 +388,34 @@ function renderCodeViewer(sourceFiles) {
 
   // Generate tab content HTML
   const tabContentsHTML = sourceFiles.map((file, index) => {
-    const lines = file.code.split('\n');
-    const highlightedLines = lines.map((line, lineNum) => {
-      const highlighted = applySyntaxHighlighting(line, file.language);
-      return `<span class="code-line"><span class="line-number">${lineNum + 1}</span><span class="line-content">${highlighted}</span></span>`;
-    }).join('\n');
+    const isImage = file.isImage || file.language === 'image';
+    let contentHTML = '';
+
+    if (isImage) {
+      const imageSrc = file.path || file.code;
+      contentHTML = `
+        <div class="code-display image-display">
+          <img src="${imageSrc}" alt="${file.filename}">
+        </div>
+      `;
+    } else {
+      const lines = (file.code || '').split('\n');
+      const highlightedLines = lines.map((line, lineNum) => {
+        const highlighted = applySyntaxHighlighting(line, file.language);
+        return `<span class="code-line"><span class="line-number">${lineNum + 1}</span><span class="line-content">${highlighted}</span></span>`;
+      }).join('\n');
+
+      contentHTML = `
+        <div class="code-display">
+          <pre>${highlightedLines}</pre>
+        </div>
+      `;
+    }
 
     return `
       <div class="code-tab-content ${index === 0 ? 'active' : ''}"
            data-tab-index="${index}">
-        <div class="code-display">
-          <pre>${highlightedLines}</pre>
-        </div>
+        ${contentHTML}
       </div>
     `;
   }).join('');

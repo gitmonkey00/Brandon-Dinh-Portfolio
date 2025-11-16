@@ -49,7 +49,34 @@
     "githubUrl": "",
     "liveUrl": "",
     "challenges": "Ensuring fault-tolerant execution and maintaining data consistency across distributed systems while processing real-time streaming data at scale.",
-    "learnings": "Developed deep expertise in building end-to-end big data pipelines, orchestrating distributed workflows, and creating actionable insights through data visualization."
+    "learnings": "Developed deep expertise in building end-to-end big data pipelines, orchestrating distributed workflows, and creating actionable insights through data visualization.",
+    "sourceFiles": [
+      {
+        "filename": "calc.vhd",
+        "language": "vhdl",
+        "path": "source-code/VHDL_Calc/calc.vhd"
+      },
+      {
+        "filename": "reg.vhd",
+        "language": "vhdl",
+        "path": "source-code/VHDL_Calc/reg.vhd"
+      },
+      {
+        "filename": "testbench.vhd",
+        "language": "vhdl",
+        "path": "source-code/VHDL_Calc/testbench.vhd"
+      },
+      {
+        "filename": "constraint.xdc",
+        "language": "xdc",
+        "path": "source-code/VHDL_Calc/constraint.xdc"
+      },
+      {
+        "filename": "waveform.png",
+        "language": "image",
+        "path": "source-code/VHDL_Calc/waveform.png"
+      }
+    ]
   },
   {
     "title": "Interactive Embedded Prop: Motion-Activated Detonator",

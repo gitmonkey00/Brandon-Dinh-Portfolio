@@ -470,6 +470,18 @@ nav a:hover {
   overflow-y: auto;
 }
 
+.code-display.image-display {
+  padding: 0;
+  max-height: none;
+  overflow: visible;
+}
+
+.code-display.image-display img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .code-display pre {
   margin: 0;
   font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
