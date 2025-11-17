@@ -10,8 +10,8 @@ html {
 :root {
   --text-color: canvastext;
   --background-color: canvas;
-  --border-color: oklch(50% 10% 200 / 40%);
-  --color-accent: oklch(60% 50% 340); /* pinkish fallback */
+  --border-color: oklch(60% 12% 220 / 40%);
+  --color-accent: oklch(68% 27% 220); /* slightly deeper light blue */
 }
 
 html {

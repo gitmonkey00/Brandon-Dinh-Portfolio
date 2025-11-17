@@ -2,10 +2,14 @@
   {
     "title": "SystemVerilog ALU Design and Verification",
     "slug": "alu-design-verification",
-    "description": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
-    "fullDescription": "Conceived a modular FPGA-based Arithmetic Logic Unit (ALU) in SystemVerilog utilizing Questa supporting core RISC-style operations: addition, subtraction, AND, OR, XOR, shift, and set-on-less-than (SLT).",
-    "techStack": ["SystemVerilog", "UVM", "RTL", "Functional Verification", "Constrained Randomization", "Test Coverage"],
-    "tags": ["Machine Learning", "Cloud Computing", "Data Engineering","AWS"],
+    "description": "Designed a SystemVerilog Arithmetic Logic Unit (ALU) implementing a RISC-V\u2013style RV32I instruction set architecture (ISA) including ADD, SUB, AND, OR, XOR, and SLT similar to ALU operations used in modern RISC-V decoders.",
+    "fullDescription": [
+      "Built a modular RV32I ALU covering ADD, SUB, AND, OR, XOR, shift, and SLT operations.",
+      "Wrote synthesizable SystemVerilog mirroring modern RISC-style decoder behavior.",
+      "Verified functionality inside Questa with constrained-random sequences and coverage checks."
+    ],
+    "techStack": ["SystemVerilog","UVM","RTL","Functional Verification","Constrained Randomization","Test Coverage"],
+    "tags": ["Machine Learning","Cloud Computing","Data Engineering","AWS"],
     "year": "2025",
     "image": "images/alutake.png",
     "images": [],
@@ -40,9 +44,13 @@
     "title": "VHDL 4-Bit Calculator with Testbenching and FSM Design",
     "slug": "calculator-testbench",
     "description": "Produced and implemented a 4-bit calculator on FPGA using VHDL, supporting addition and accumulator clear (AC) operations with finite state machine (FSM) control logic.",
-    "fullDescription": "Produced and implemented a 4-bit calculator on FPGA using VHDL, supporting addition and accumulator clear (AC) operations with finite state machine (FSM) control logic. Created a comprehensive VHDL testbench to verify functional correctness of “Add” and “AC” operations, including state transitions and output waveform validation. Utilized Xilinx Vivado for simulation and synthesis; performed waveform analysis to debug and verify internal states using testbench stimulus and scope probing. Mapped the design onto a physical FPGA board with a custom constraints file to interface slide switches, LEDs, pushbuttons, and a 100MHz clock.",
-    "techStack": ["VHDL", "FPGA", "Vivado","Finite State Machine", "Testbenching"],
-    "tags": ["Data Engineering", "Cloud Computing", "Data Visualization","AWS"],
+    "fullDescription": [
+      "Implemented a 4-bit calculator FSM in VHDL with ADD and accumulator-clear behaviors.",
+      "Built a self-checking VHDL testbench and inspected timing in Vivado waveforms.",
+      "Targeted an FPGA board with a custom constraints file for switches, LEDs, and the clock."
+    ],
+    "techStack": ["VHDL","FPGA","Vivado","Finite State Machine","Testbenching"],
+    "tags": ["Data Engineering","Cloud Computing","Data Visualization","AWS"],
     "year": "2025",
     "image": "images/Lab_5_Portfolio.png",
     "images": [],
@@ -82,24 +90,59 @@
     "title": "Interactive Embedded Prop: Motion-Activated Detonator",
     "slug": "pcb-embedded",
     "description": "Fabricated an interactive detonator prop that combines embedded systems, 3D design, and software engineering through the use of a custom designed PCB along with experience in designing and prototyping.",
-    "fullDescription": "Fabricated an interactive detonator prop that combines embedded systems, 3D design, and software engineering through the use of a custom designed PCB along with experience in designing and prototyping. System Integration: Integration of audio components, such as the DFplayer Mini MP3 player, into a custom PCB.",
-    "techStack": ["PCB Design", "Embedded", "Digital Logic", "UART", "Full Stack Development"],
-    "tags": ["Data Engineering", "Cloud Computing", "Data Analytics","Azure"],
+    "fullDescription": [
+      "Prototyped a motion-activated detonator prop on a custom PCB.",
+      "Integrated sensors, LEDs, and a DFPlayer Mini audio module directly on the board.",
+      "Blended embedded firmware, enclosure design, and iterative fabrication workflows."
+    ],
+    "techStack": ["PCB Design","Embedded","Digital Logic","UART","Full Stack Development"],
+    "tags": ["Data Engineering","Cloud Computing","Data Analytics","Azure"],
     "year": "2025",
     "image": "images/pcbimage.png",
     "images": [],
     "githubUrl": "",
     "liveUrl": "",
     "challenges": "Processing and cleansing 1M+ rows of sensor data with varying quality levels while implementing effective outlier detection algorithms.",
-    "learnings": "Mastered the Medallion architecture pattern for data lakes and gained proficiency in Azure cloud services and advanced Power BI dashboard development."
+    "learnings": "Mastered the Medallion architecture pattern for data lakes and gained proficiency in Azure cloud services and advanced Power BI dashboard development.",
+    "sourceFiles": [
+      {
+        "filename": "Design_PCB.png",
+        "language": "image",
+        "path": "source-code/pcb-embedded/Design_PCB.png"
+      },
+      {
+        "filename": "Components_PCB.png",
+        "language": "image",
+        "path": "source-code/pcb-embedded/Components_PCB.png"
+      },
+      {
+        "filename": "First_Revision_PCB.png",
+        "language": "image",
+        "path": "source-code/pcb-embedded/First_Revision_PCB.png"
+      },
+      {
+        "filename": "Code_PCB.png",
+        "language": "image",
+        "path": "source-code/pcb-embedded/Code_PCB.png"
+      },
+      {
+        "filename": "Final_Product_PCB.png",
+        "language": "image",
+        "path": "source-code/pcb-embedded/Final_Product_PCB.png"
+      }
+    ]
   },
   {
     "title": "Shelf of Health: Food Processing Visualization",
     "slug": "shelf-of-health",
     "description": "Visualization mapping grocery store shelves by food processing levels, revealing that even 'healthy' stores mainly stock ultra-processed foods.",
-    "fullDescription": "Awarded Best Project Award, ranking in the top 3% of 180 students, for a creative and tangible visual design praised for its clarity and evocative storytelling. Developed an Excel-based visualization mapping grocery store shelves by food processing levels (NOVA classes), allowing users to intuitively see how 'healthy' stores still stock mostly ultra-processed foods. This project combined data analysis with creative visualization to tell a compelling story about food quality in modern grocery stores.",
-    "techStack": ["Excel", "Python", "Data Visualization", "Statistical Analysis"],
-    "tags": ["Data Visualization", "Data Analytics"],
+    "fullDescription": [
+      "Won Best Project by turning NOVA food-processing data into a physical shelf story.",
+      "Used Excel and Python to classify grocery items by processing level.",
+      "Revealed that even 'healthy' stores stock mostly ultra-processed products."
+    ],
+    "techStack": ["Excel","Python","Data Visualization","Statistical Analysis"],
+    "tags": ["Data Visualization","Data Analytics"],
     "year": "2025",
     "image": "images/Project 1_visual_withoutpercent.png",
     "images": [],
@@ -112,9 +155,12 @@
     "title": "Exoplanet",
     "slug": "exoplanet-visualization",
     "description": "Visualizes exoplanet data using interactive maps.",
-    "fullDescription": "todo",
-    "techStack": ["JavaScript", "D3.js", "Data Visualization"],
-    "tags": ["Data Visualization", "Web Development"],
+    "fullDescription": [
+      "Visualizes confirmed exoplanets with interactive D3 maps and charts.",
+      "Explores the TOI catalog through a GitHub-hosted data workflow."
+    ],
+    "techStack": ["JavaScript","D3.js","Data Visualization"],
+    "tags": ["Data Visualization","Web Development"],
     "year": "2025",
     "image": "images/Exoplanet-TOI.png",
     "images": [],
@@ -127,9 +173,11 @@
     "title": "Mouse",
     "slug": "Mousevis",
     "description": "todo",
-    "fullDescription": "todo",
-    "techStack": ["IoT", "Sensors", "Python", "Data Analysis"],
-    "tags": ["IoT", "Data Analytics"],
+    "fullDescription": [
+      "todo"
+    ],
+    "techStack": ["IoT","Sensors","Python","Data Analysis"],
+    "tags": ["IoT","Data Analytics"],
     "year": "2025",
     "image": "images/MouseEstrous.png",
     "images": [],
@@ -142,9 +190,16 @@
     "title": "Culinary Trends Analysis",
     "slug": "culinary-trends-analysis",
     "description": "Uses machine learning and statistical testing on 84K Food.com recipes to explore how cuisine type affects ratings.",
-    "fullDescription": "Used machine learning and statistical testing on 84,000 Food.com recipes to explore how cuisine type affects ratings. Built predictive models with feature engineering and SMOTE to improve accuracy and handle class imbalance. The project involved extensive data cleaning, exploratory data analysis, and the development of multiple classification models to predict recipe ratings based on various features including cuisine type, ingredients, and nutritional information.",
-    "techStack": ["Python", "Machine Learning", "Pandas", "Scikit-learn", "SMOTE", "Statistical Testing"],
-    "tags": ["Machine Learning", "Data Analytics"],
+    "fullDescription": [
+      "Analyzed 84K Food.com recipes to connect cuisine types with rating trends.",
+      "Engineered structured features and applied SMOTE to balance training data.",
+      "Ran multiple classifiers plus statistical tests to validate the insights."
+    ],
+    "techStack": ["Python","Machine Learning","Pandas","Scikit-learn","SMOTE","Statistical Testing"],
+    "tags": [
+      "Machine Learning",
+      "Data Analytics"
+    ],
     "year": "2024",
     "image": "images/DistributionOf_ratings.png",
     "images": [],

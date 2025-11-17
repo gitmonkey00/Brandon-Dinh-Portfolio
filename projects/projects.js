@@ -109,7 +109,7 @@ async function showProjectDetail(project) {
 
       <section class="detail-section">
         <h2>About</h2>
-        <p>${project.fullDescription}</p>
+        ${renderFullDescription(project.fullDescription)}
       </section>
 
       ${sourceFilesContent ? renderCodeViewer(sourceFilesContent) : ''}
@@ -458,6 +458,22 @@ function attachCodeViewerListeners() {
         .classList.add('active');
     });
   });
+}
+
+/**
+ * Render the full description as either a paragraph or bullet list
+ * @param {string|string[]} fullDescription
+ * @returns {string}
+ */
+function renderFullDescription(fullDescription) {
+  if (Array.isArray(fullDescription)) {
+    const items = fullDescription
+      .map(item => `<li>${item}</li>`)
+      .join('');
+    return `<ul class="detail-bullets">${items}</ul>`;
+  }
+
+  return `<p>${fullDescription}</p>`;
 }
 
 // ============================================
