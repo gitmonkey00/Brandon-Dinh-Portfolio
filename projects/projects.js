@@ -155,7 +155,6 @@ function renderProjects(projectsList, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   projectsList.forEach((project) => {
     const article = document.createElement('article');
-    article.id = project.slug;
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
       <img src="${project.image}" alt="${project.title}">
