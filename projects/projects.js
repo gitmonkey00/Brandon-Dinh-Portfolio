@@ -41,11 +41,11 @@ window.addEventListener('hashchange', handleRoute);
  * Async to support loading external source files
  */
 async function handleRoute() {
-  const slug = getCurrentSlug();
+  const hash = window.location.hash.slice(1); // Remove '#'
 
-  if (slug) {
+  if (hash) {
     // Show project detail
-    const project = projects.find(p => p.slug === slug);
+    const project = projects.find(p => p.slug === hash);
     if (project) {
       await showProjectDetail(project);
     } else {
@@ -458,23 +458,6 @@ function attachCodeViewerListeners() {
         .classList.add('active');
     });
   });
-}
-
-/**
- * Extract the targeted project slug from the current URL.
- * Supports hash fragments plus ?project=/ ?slug= query params
- * and trims stray whitespace or encoding artifacts.
- * @returns {string}
- */
-function getCurrentSlug() {
-  const hashSlug = decodeURIComponent(window.location.hash.slice(1)).trim();
-  if (hashSlug) {
-    return hashSlug;
-  }
-
-  const params = new URLSearchParams(window.location.search);
-  const querySlug = params.get('project') || params.get('slug');
-  return querySlug ? querySlug.trim() : '';
 }
 
 /**
