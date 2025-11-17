@@ -1,12 +1,14 @@
 [
   {
-    "title": "SystemVerilog ALU Design and Verification",
+    "title": "SystemVerilog ALU Design and Verification with RISC-V ISA",
     "slug": "alu-design-verification",
     "description": "Designed a SystemVerilog Arithmetic Logic Unit (ALU) implementing a RISC-V\u2013style RV32I instruction set architecture (ISA) including ADD, SUB, AND, OR, XOR, and SLT similar to ALU operations used in modern RISC-V decoders.",
     "fullDescription": [
-      "Built a modular RV32I ALU covering ADD, SUB, AND, OR, XOR, shift, and SLT operations.",
-      "Wrote synthesizable SystemVerilog mirroring modern RISC-style decoder behavior.",
-      "Verified functionality inside Questa with constrained-random sequences and coverage checks."
+      "Designed a SystemVerilog Arithmetic Logic Unit (ALU) implementing a RISC-V",
+      "Utilized RISC-V instruction set architecture (ISA) including ADD, SUB, AND, OR, XOR, and SLT similar to ALU operations used in modern RISC-V decoders.",
+      "Programmed a SystemVerilog UVM testbench to verify operations and edge cases, such as zero, overflow, and signed arithmetic in digital logic.",
+      "Created reusable UVM components (driver, monitor, scoreboard, sequences) to apply randomized and directed stimuli for exhaustive functional coverage.",
+      "Executed full RTL–to–UVM simulation flow in Questa (vlog → vopt → vsim), achieving a clean compile (0 errors), passing all 205 directed and randomized UVM tests, and reaching 89.6% functional coverage—demonstrating ISA-accurate ALU behavior and verification completeness."
     ],
     "techStack": ["SystemVerilog","UVM","RTL","Functional Verification","Constrained Randomization","Test Coverage"],
     "tags": ["Machine Learning","Cloud Computing","Data Engineering","AWS"],
@@ -15,8 +17,8 @@
     "images": [],
     "githubUrl": "",
     "liveUrl": "",
-    "challenges": "Integrating multimodal data sources and ensuring accurate cross-modal retrieval while maintaining low latency for real-time recommendations.",
-    "learnings": "Gained hands-on experience with AWS cloud services, vector databases, and the practical implementation of RAG architectures for production use cases.",
+    "challenges": "Ensuring the covergroups would capture all possible outputs from the bins while maintaining efficient simulation times.",
+    "learnings": "Gained proficiency in SystemVerilog UVM methodologies, constrained random verification techniques, and the importance of comprehensive functional coverage in hardware design verification.",
     "sourceFiles": [
       {
         "filename": "design.sv",
@@ -41,13 +43,14 @@
     ]
   },
   {
-    "title": "VHDL 4-Bit Calculator with Testbenching and FSM Design",
+    "title": "VHDL 4-Bit Calculator with Testbenching and FSM Design on FPGA",
     "slug": "calculator-testbench",
     "description": "Produced and implemented a 4-bit calculator on FPGA using VHDL, supporting addition and accumulator clear (AC) operations with finite state machine (FSM) control logic.",
     "fullDescription": [
-      "Implemented a 4-bit calculator FSM in VHDL with ADD and accumulator-clear behaviors.",
-      "Built a self-checking VHDL testbench and inspected timing in Vivado waveforms.",
-      "Targeted an FPGA board with a custom constraints file for switches, LEDs, and the clock."
+      "Produced and implemented a 4-bit calculator on FPGA using VHDL, supporting addition and accumulator clear (AC) operations with finite state machine (FSM) control logic.",
+      "Architected modular RTL components including datapath (adder, 8-bit padding), FSM control circuit, and a register module interfaced via pushbuttons and slide switches.",
+      "Created a comprehensive VHDL testbench to verify functional correctness of “Add” and “AC” operations, including state transitions and output waveform validation.",
+      "Utilized Xilinx Vivado for simulation and synthesis; performed waveform analysis to debug and verify internal states using testbench stimulus and scope probing."
     ],
     "techStack": ["VHDL","FPGA","Vivado","Finite State Machine","Testbenching"],
     "tags": ["Data Engineering","Cloud Computing","Data Visualization","AWS"],
@@ -56,8 +59,8 @@
     "images": [],
     "githubUrl": "",
     "liveUrl": "",
-    "challenges": "Ensuring fault-tolerant execution and maintaining data consistency across distributed systems while processing real-time streaming data at scale.",
-    "learnings": "Developed deep expertise in building end-to-end big data pipelines, orchestrating distributed workflows, and creating actionable insights through data visualization.",
+    "challenges": "Debugging state transitions in the FSM to ensure correct operation sequencing and timing under various input conditions.",
+    "learnings": "Enhanced skills in VHDL coding for FPGA applications, FSM design principles, and the importance of thorough testbenching for validating digital logic designs.",
     "sourceFiles": [
       {
         "filename": "calc.vhd",
@@ -102,8 +105,8 @@
     "images": [],
     "githubUrl": "",
     "liveUrl": "",
-    "challenges": "Processing and cleansing 1M+ rows of sensor data with varying quality levels while implementing effective outlier detection algorithms.",
-    "learnings": "Mastered the Medallion architecture pattern for data lakes and gained proficiency in Azure cloud services and advanced Power BI dashboard development.",
+    "challenges": "Designing a compact PCB layout that accommodated all components while ensuring reliable connections and minimizing noise interference.",
+    "learnings": "Gained hands-on experience in PCB design and fabrication, embedded systems programming, and the importance of iterative prototyping in product development.",
     "sourceFiles": [
       {
         "filename": "Design_PCB.png",
