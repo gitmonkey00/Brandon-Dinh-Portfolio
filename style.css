@@ -137,17 +137,68 @@ nav a:hover {
    HOME PAGE - index.html
    ============================================ */
 
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
 .profile-pic {
   display: block;
-  margin: 1rem auto;
-  max-width: 300px;
+  width: min(32vw, 260px);
   height: auto;
+  margin: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.hero-text {
+  flex: 1;
 }
 
 .welcome {
-  text-align: center;
-  margin-top: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+.intro {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.intro-label {
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-right: 0.35rem;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .profile-pic {
+    margin: 0 auto;
+    width: min(60vw, 260px);
+  }
+
+  .welcome {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    text-align: center;
+  }
 }
 
 
