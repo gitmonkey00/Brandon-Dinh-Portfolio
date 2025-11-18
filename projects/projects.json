@@ -2,7 +2,7 @@
   {
     "title": "SystemVerilog ALU Design and Verification with RISC-V ISA",
     "slug": "alu-design-verification",
-    "description": "Designed a SystemVerilog Arithmetic Logic Unit (ALU) implementing a RISC-V\u2013style RV32I instruction set architecture (ISA) including ADD, SUB, AND, OR, XOR, and SLT similar to ALU operations used in modern RISC-V decoders.",
+    "description": "Designed a SystemVerilog Arithmetic Logic Unit (ALU) implementing a RISC-V–style RV32I instruction set architecture (ISA) including ADD, SUB, AND, OR, XOR, and SLT similar to ALU operations used in modern RISC-V decoders.",
     "fullDescription": [
       "Designed a SystemVerilog Arithmetic Logic Unit (ALU) implementing a RISC-V",
       "Utilized RISC-V instruction set architecture (ISA) including ADD, SUB, AND, OR, XOR, and SLT similar to ALU operations used in modern RISC-V decoders.",
@@ -10,8 +10,20 @@
       "Created reusable UVM components (driver, monitor, scoreboard, sequences) to apply randomized and directed stimuli for exhaustive functional coverage.",
       "Executed full RTL–to–UVM simulation flow in Questa (vlog → vopt → vsim), achieving a clean compile (0 errors), passing all 205 directed and randomized UVM tests, and reaching 89.6% functional coverage—demonstrating ISA-accurate ALU behavior and verification completeness."
     ],
-    "techStack": ["SystemVerilog","UVM","RTL","Functional Verification","Constrained Randomization","Test Coverage"],
-    "tags": ["Machine Learning","Cloud Computing","Data Engineering","AWS"],
+    "techStack": [
+      "SystemVerilog",
+      "UVM",
+      "RTL",
+      "Functional Verification",
+      "Constrained Randomization",
+      "Test Coverage"
+    ],
+    "tags": [
+      "Machine Learning",
+      "Cloud Computing",
+      "Data Engineering",
+      "AWS"
+    ],
     "year": "2025",
     "image": "images/alutake.png",
     "images": [],
@@ -52,8 +64,19 @@
       "Created a comprehensive VHDL testbench to verify functional correctness of “Add” and “AC” operations, including state transitions and output waveform validation.",
       "Utilized Xilinx Vivado for simulation and synthesis; performed waveform analysis to debug and verify internal states using testbench stimulus and scope probing."
     ],
-    "techStack": ["VHDL","FPGA","Vivado","Finite State Machine","Testbenching"],
-    "tags": ["Data Engineering","Cloud Computing","Data Visualization","AWS"],
+    "techStack": [
+      "VHDL",
+      "FPGA",
+      "Vivado",
+      "Finite State Machine",
+      "Testbenching"
+    ],
+    "tags": [
+      "Data Engineering",
+      "Cloud Computing",
+      "Data Visualization",
+      "AWS"
+    ],
     "year": "2025",
     "image": "images/Lab_5_Portfolio.png",
     "images": [],
@@ -98,8 +121,19 @@
       "Integrated sensors, LEDs, and a DFPlayer Mini audio module directly on the board.",
       "Blended embedded firmware, enclosure design, and iterative fabrication workflows."
     ],
-    "techStack": ["PCB Design","Embedded","Digital Logic","UART","Full Stack Development"],
-    "tags": ["Data Engineering","Cloud Computing","Data Analytics","Azure"],
+    "techStack": [
+      "PCB Design",
+      "Embedded",
+      "Digital Logic",
+      "UART",
+      "Full Stack Development"
+    ],
+    "tags": [
+      "Data Engineering",
+      "Cloud Computing",
+      "Data Analytics",
+      "Azure"
+    ],
     "year": "2025",
     "image": "images/pcbimage.png",
     "images": [],
@@ -134,81 +168,5 @@
         "path": "source-code/pcb-embedded/Final_Product_PCB.png"
       }
     ]
-  },
-  {
-    "title": "Shelf of Health: Food Processing Visualization",
-    "slug": "shelf-of-health",
-    "description": "Visualization mapping grocery store shelves by food processing levels, revealing that even 'healthy' stores mainly stock ultra-processed foods.",
-    "fullDescription": [
-      "Won Best Project by turning NOVA food-processing data into a physical shelf story.",
-      "Used Excel and Python to classify grocery items by processing level.",
-      "Revealed that even 'healthy' stores stock mostly ultra-processed products."
-    ],
-    "techStack": ["Excel","Python","Data Visualization","Statistical Analysis"],
-    "tags": ["Data Visualization","Data Analytics"],
-    "year": "2025",
-    "image": "images/Project 1_visual_withoutpercent.png",
-    "images": [],
-    "githubUrl": "",
-    "liveUrl": "",
-    "challenges": "Creating an intuitive and engaging visualization that effectively communicates complex nutritional data to a general audience.",
-    "learnings": "Learned the importance of visual storytelling in data science and how creative presentation can make data insights more accessible and impactful."
-  },
-  {
-    "title": "Exoplanet",
-    "slug": "exoplanet-visualization",
-    "description": "Visualizes exoplanet data using interactive maps.",
-    "fullDescription": [
-      "Visualizes confirmed exoplanets with interactive D3 maps and charts.",
-      "Explores the TOI catalog through a GitHub-hosted data workflow."
-    ],
-    "techStack": ["JavaScript","D3.js","Data Visualization"],
-    "tags": ["Data Visualization","Web Development"],
-    "year": "2025",
-    "image": "images/Exoplanet-TOI.png",
-    "images": [],
-    "githubUrl": "https://github.com/Ctt011/World_OfExoplanets",
-    "liveUrl": "https://ctt011.github.io/World_OfExoplanets/main/",
-    "challenges": "todo",
-    "learnings": "todo."
-  },
-  {
-    "title": "Mouse",
-    "slug": "Mousevis",
-    "description": "todo",
-    "fullDescription": [
-      "todo"
-    ],
-    "techStack": ["IoT","Sensors","Python","Data Analysis"],
-    "tags": ["IoT","Data Analytics"],
-    "year": "2025",
-    "image": "images/MouseEstrous.png",
-    "images": [],
-    "githubUrl": "",
-    "liveUrl": "",
-    "challenges": "todo",
-    "learnings": "todo."
-  },
-  {
-    "title": "Culinary Trends Analysis",
-    "slug": "culinary-trends-analysis",
-    "description": "Uses machine learning and statistical testing on 84K Food.com recipes to explore how cuisine type affects ratings.",
-    "fullDescription": [
-      "Analyzed 84K Food.com recipes to connect cuisine types with rating trends.",
-      "Engineered structured features and applied SMOTE to balance training data.",
-      "Ran multiple classifiers plus statistical tests to validate the insights."
-    ],
-    "techStack": ["Python","Machine Learning","Pandas","Scikit-learn","SMOTE","Statistical Testing"],
-    "tags": [
-      "Machine Learning",
-      "Data Analytics"
-    ],
-    "year": "2024",
-    "image": "images/DistributionOf_ratings.png",
-    "images": [],
-    "githubUrl": "https://github.com/Ctt011/CuisineCritique",
-    "liveUrl": "https://ctt011.github.io/CuisineCritique/",
-    "challenges": "Handling class imbalance in the dataset and extracting meaningful features from unstructured recipe data.",
-    "learnings": "Gained experience in feature engineering, dealing with imbalanced datasets using SMOTE, and applying statistical methods to validate machine learning findings."
   }
 ]
