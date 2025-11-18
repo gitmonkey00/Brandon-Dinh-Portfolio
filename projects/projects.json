@@ -34,11 +34,6 @@
         "filename": "output.sv",
         "language": "systemverilog",
         "path": "source-code/alu-design-verification/output.sv"
-      },
-      {
-        "filename": "alu_interface.sv",
-        "language": "systemverilog",
-        "path": "source-code/alu-design-verification/alu_interface.sv"
       }
     ]
   },
@@ -90,7 +85,7 @@
     ]
   },
   {
-    "title": "Interactive Embedded Prop: Motion-Activated Detonator",
+    "title": "Custom PCB Embedded Prop: Motion-Activated Detonator",
     "slug": "pcb-embedded",
     "description": "Fabricated an interactive detonator prop that combines embedded systems, 3D design, and software engineering through the use of a custom designed PCB along with experience in designing and prototyping.",
     "fullDescription": [
