@@ -20,7 +20,7 @@
     "source-code/axi-esiu-verification/uvm_testbench_architecture.svg",
     "source-code/axi-esiu-verification/axi_waveform_timing.svg"
   ],
-  "githubUrl": "https://github.com/yourusername/axi-uvm-verification",
+  "githubUrl": "",
   "liveUrl": "",
   "challenges": "Getting the AXI4-Lite protocol timing exactly right was challenging—the handshake between VALID and READY signals can happen in different orders, requiring careful driver implementation to handle all valid scenarios while assertions caught protocol violations. Additionally, achieving the final 5% of functional coverage required analyzing coverage reports to identify missing corner cases and writing directed sequences to specifically target those scenarios.",
   "learnings": "Gained deep proficiency in UVM methodology, AXI4-Lite protocol implementation, assertion-based verification techniques, and coverage-driven verification strategies. Learned the importance of building reusable verification components and maintaining a reference model for self-checking testbenches in complex hardware verification projects.",
