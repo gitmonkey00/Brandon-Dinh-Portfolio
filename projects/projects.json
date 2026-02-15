@@ -1,5 +1,125 @@
 [
   {
+    
+  "title": "AXI4-Lite Bus Protocol UVM Verification for Embedded SoC",
+  "slug": "axi-esiu-verification",
+  "description": "Developed a complete UVM-based verification environment for an avionics-style Environmental Sensor Interface Unit (ESIU) with an AXI4-Lite register map for temperature, pressure, configuration, and status monitoring.",
+  "fullDescription": [
+    "Developed a complete UVM-based verification environment for an avionics-style Environmental Sensor Interface Unit (ESIU) with an AXI4-Lite register map for temperature, pressure, configuration, and status monitoring.",
+    "Implemented reusable UVM components (driver, sequencer, monitor, agent, scoreboard) and created constrained-random sequences to validate register behavior, reset logic, illegal accesses, and back-to-back AXI4-Lite transactions.",
+    "Verified AXI4-Lite protocol using SystemVerilog Assertions (SVA), ensuring correct VALID/READY handshakes, address alignment, write responses, and read-data timing while detecting mismatches through a functional scoreboard.",
+    "Designed functional coverage models and performed fault-injection testing (out-of-range sensor values, FIFO overflow, malformed transactions) to validate robust error handling and corner-case behavior.",
+    "Executed complete RTL-to-UVM simulation flow in Questa achieving 98% functional coverage, 237/237 passing transactions, and 100% assertion compliance—demonstrating protocol-accurate implementation and comprehensive verification completeness."
+  ],
+  "techStack": ["SystemVerilog", "UVM", "AXI4-Lite", "Coverage-Driven Verification", "Assertion-Based Verification", "RTL Verification", "Protocol Verification"],
+  "tags": ["SystemVerilog", "UVM", "AXI4-Lite", "RTL Verification", "Functional Coverage", "SVA", "Protocol Verification", "Constrained Randomization"],
+  "year": "2025",
+  "image": "images/uvm_testbench_architecture.png",
+  "images": [
+    "source-code/axi-esiu-verification/esiu_dut_architecture.svg",
+    "source-code/axi-esiu-verification/uvm_testbench_architecture.svg",
+    "source-code/axi-esiu-verification/axi_waveform_timing.svg"
+  ],
+  "githubUrl": "https://github.com/yourusername/axi-uvm-verification",
+  "liveUrl": "",
+  "challenges": "Getting the AXI4-Lite protocol timing exactly right was challenging—the handshake between VALID and READY signals can happen in different orders, requiring careful driver implementation to handle all valid scenarios while assertions caught protocol violations. Additionally, achieving the final 5% of functional coverage required analyzing coverage reports to identify missing corner cases and writing directed sequences to specifically target those scenarios.",
+  "learnings": "Gained deep proficiency in UVM methodology, AXI4-Lite protocol implementation, assertion-based verification techniques, and coverage-driven verification strategies. Learned the importance of building reusable verification components and maintaining a reference model for self-checking testbenches in complex hardware verification projects.",
+  "sourceFiles": [
+    {
+      "filename": "esiu_dut.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/esiu_dut.sv"
+    },
+    {
+      "filename": "axi_if.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_if.sv"
+    },
+    {
+      "filename": "axi_transaction.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_transaction.sv"
+    },
+    {
+      "filename": "axi_driver.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_driver.sv"
+    },
+    {
+      "filename": "axi_monitor.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_monitor.sv"
+    },
+    {
+      "filename": "axi_scoreboard.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_scoreboard.sv"
+    },
+    {
+      "filename": "axi_agent.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_agent.sv"
+    },
+    {
+      "filename": "axi_env.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_env.sv"
+    },
+    {
+      "filename": "axi_sequences.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_sequences.sv"
+    },
+    {
+      "filename": "axi_test.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_test.sv"
+    },
+    {
+      "filename": "axi_uvm_pkg.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/axi_uvm_pkg.sv"
+    },
+    {
+      "filename": "tb_top.sv",
+      "language": "systemverilog",
+      "path": "source-code/axi-esiu-verification/tb_top.sv"
+    },
+    {
+      "filename": "esiu_dut_architecture.png",
+      "language": "image",
+      "path": "source-code/axi-esiu-verification/esiu_dut_architecture.png"
+    },
+    {
+      "filename": "uvm_testbench_architecture.png",
+      "language": "image",
+      "path": "source-code/axi-esiu-verification/uvm_testbench_architecture.png"
+    },
+    {
+      "filename": "axi_waveform_timing.svg",
+      "language": "image",
+      "path": "source-code/axi-esiu-verification/axi_waveform_timing.svg"
+    },
+    {
+      "filename": "README.md",
+      "language": "markdown",
+      "path": "source-code/axi-esiu-verification/README.md"
+    },
+    {
+      "filename": "Makefile",
+      "language": "makefile",
+      "path": "source-code/axi-esiu-verification/Makefile"
+    },
+    {
+      "filename": "QUESTA_SETUP.md",
+      "language": "markdown",
+      "path": "source-code/axi-esiu-verification/QUESTA_SETUP.md"
+    }
+  ]
+
+
+  },
+  {
     "title": "SystemVerilog ALU Design and Verification with RISC-V ISA",
     "slug": "alu-design-verification",
     "description": "Designed a SystemVerilog Arithmetic Logic Unit (ALU) implementing a RISC-V\u2013style RV32I instruction set architecture (ISA) including ADD, SUB, AND, OR, XOR, and SLT similar to ALU operations used in modern RISC-V decoders.",

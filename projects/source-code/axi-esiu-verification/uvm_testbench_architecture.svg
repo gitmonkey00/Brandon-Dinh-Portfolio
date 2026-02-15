@@ -1,0 +1,131 @@
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="900" height="700" fill="#f9f9f9"/>
+    
+    <!-- Title -->
+    <text x="450" y="30" text-anchor="middle" fill="#333" font-size="22" font-weight="bold" font-family="Arial, sans-serif">UVM Testbench Architecture</text>
+    
+    <!-- Test -->
+    <rect x="350" y="60" width="200" height="50" fill="#ff6b6b" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="450" y="90" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial, sans-serif">uvm_test</text>
+    
+    <!-- Environment -->
+    <rect x="300" y="140" width="300" height="80" fill="#4ecdc4" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="450" y="170" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial, sans-serif">axi_env (Environment)</text>
+    <text x="450" y="190" text-anchor="middle" fill="white" font-size="11" font-family="Arial, sans-serif">Scoreboard + Coverage Collector</text>
+    
+    <!-- Agent -->
+    <rect x="100" y="260" width="250" height="370" fill="#95e1d3" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="225" y="290" text-anchor="middle" fill="#333" font-size="14" font-weight="bold" font-family="Arial, sans-serif">axi_agent</text>
+    
+    <!-- Sequencer -->
+    <rect x="120" y="310" width="90" height="60" fill="#f38181" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="165" y="335" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial, sans-serif">Sequencer</text>
+    <text x="165" y="355" text-anchor="middle" fill="white" font-size="9" font-family="Arial, sans-serif">axi_transaction</text>
+    
+    <!-- Driver -->
+    <rect x="120" y="390" width="90" height="80" fill="#aa96da" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="165" y="415" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial, sans-serif">Driver</text>
+    <text x="165" y="435" text-anchor="middle" fill="white" font-size="9" font-family="Arial, sans-serif">Drives AXI4-Lite</text>
+    <text x="165" y="450" text-anchor="middle" fill="white" font-size="9" font-family="Arial, sans-serif">transactions</text>
+    
+    <!-- Monitor -->
+    <rect x="240" y="390" width="90" height="80" fill="#fcbad3" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="285" y="415" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial, sans-serif">Monitor</text>
+    <text x="285" y="435" text-anchor="middle" fill="white" font-size="9" font-family="Arial, sans-serif">Observes bus</text>
+    <text x="285" y="450" text-anchor="middle" fill="white" font-size="9" font-family="Arial, sans-serif">activity</text>
+    
+    <!-- Analysis Port -->
+    <rect x="240" y="490" width="90" height="40" fill="#ffffd2" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="285" y="515" text-anchor="middle" fill="#333" font-size="11" font-weight="bold" font-family="Arial, sans-serif">Analysis Port</text>
+    
+    <!-- Virtual Interface -->
+    <rect x="120" y="560" width="210" height="50" fill="#a8e6cf" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="225" y="590" text-anchor="middle" fill="#333" font-size="12" font-weight="bold" font-family="Arial, sans-serif">Virtual Interface (vif)</text>
+    
+    <!-- Scoreboard -->
+    <rect x="400" y="260" width="180" height="100" fill="#dfe4ea" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="490" y="290" text-anchor="middle" fill="#333" font-size="13" font-weight="bold" font-family="Arial, sans-serif">Scoreboard</text>
+    <text x="490" y="310" text-anchor="middle" fill="#333" font-size="10" font-family="Arial, sans-serif">Reference Model</text>
+    <text x="490" y="330" text-anchor="middle" fill="#333" font-size="10" font-family="Arial, sans-serif">Expected vs Actual</text>
+    <text x="490" y="345" text-anchor="middle" fill="#333" font-size="10" font-family="Arial, sans-serif">Comparison</text>
+    
+    <!-- Coverage Collector -->
+    <rect x="400" y="380" width="180" height="80" fill="#ffd3b6" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="490" y="410" text-anchor="middle" fill="#333" font-size="13" font-weight="bold" font-family="Arial, sans-serif">Coverage Collector</text>
+    <text x="490" y="430" text-anchor="middle" fill="#333" font-size="10" font-family="Arial, sans-serif">Functional Coverage</text>
+    <text x="490" y="445" text-anchor="middle" fill="#333" font-size="10" font-family="Arial, sans-serif">Corner Cases</text>
+    
+    <!-- DUT -->
+    <rect x="620" y="260" width="180" height="180" fill="#764ba2" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="710" y="295" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial, sans-serif">DUT (ESIU)</text>
+    <text x="710" y="320" text-anchor="middle" fill="white" font-size="11" font-family="Arial, sans-serif">AXI4-Lite Slave</text>
+    <text x="710" y="340" text-anchor="middle" fill="white" font-size="11" font-family="Arial, sans-serif">Register Map</text>
+    <rect x="640" y="360" width="140" height="30" fill="#e0e0ff" stroke="#333" stroke-width="1" rx="3"/>
+    <text x="710" y="380" text-anchor="middle" fill="#333" font-size="10" font-family="Arial, sans-serif">TEMP | PRESS</text>
+    <rect x="640" y="395" width="140" height="30" fill="#e0e0ff" stroke="#333" stroke-width="1" rx="3"/>
+    <text x="710" y="415" text-anchor="middle" fill="#333" font-size="10" font-family="Arial, sans-serif">CONFIG | STATUS</text>
+    
+    <!-- Sequences (left side) -->
+    <rect x="20" y="310" width="70" height="220" fill="#fff5ba" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="55" y="330" text-anchor="middle" fill="#333" font-size="10" font-weight="bold" font-family="Arial, sans-serif">Sequences:</text>
+    <text x="55" y="350" text-anchor="middle" fill="#333" font-size="8" font-family="Arial, sans-serif">• Write Seq</text>
+    <text x="55" y="370" text-anchor="middle" fill="#333" font-size="8" font-family="Arial, sans-serif">• Read Seq</text>
+    <text x="55" y="390" text-anchor="middle" fill="#333" font-size="8" font-family="Arial, sans-serif">• Random Seq</text>
+    <text x="55" y="410" text-anchor="middle" fill="#333" font-size="8" font-family="Arial, sans-serif">• Back2Back</text>
+    <text x="55" y="430" text-anchor="middle" fill="#333" font-size="8" font-family="Arial, sans-serif">• Fault Inject</text>
+    <text x="55" y="450" text-anchor="middle" fill="#333" font-size="8" font-family="Arial, sans-serif">• Reset Seq</text>
+    <text x="55" y="470" text-anchor="middle" fill="#333" font-size="8" font-family="Arial, sans-serif">• Corner Case</text>
+    
+    <!-- Arrows -->
+    <!-- Test to Env -->
+    <line x1="450" y1="110" x2="450" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Env to Agent -->
+    <line x1="350" y1="220" x2="250" y2="260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Env to Scoreboard -->
+    <line x1="490" y1="220" x2="490" y2="260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Sequences to Sequencer -->
+    <line x1="90" y1="350" x2="120" y2="340" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Sequencer to Driver -->
+    <line x1="165" y1="370" x2="165" y2="390" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="185" y="385" text-anchor="start" fill="#333" font-size="9" font-family="Arial, sans-serif">get_next_item()</text>
+    
+    <!-- Driver to VIF -->
+    <line x1="165" y1="470" x2="165" y2="560" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Monitor to VIF -->
+    <line x1="285" y1="470" x2="285" y2="560" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Monitor to Analysis Port -->
+    <line x1="285" y1="470" x2="285" y2="490" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Analysis Port to Scoreboard -->
+    <line x1="330" y1="510" x2="400" y2="310" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+    <text x="360" y="400" text-anchor="middle" fill="#333" font-size="9" font-family="Arial, sans-serif">write(trans)</text>
+    
+    <!-- Analysis Port to Coverage -->
+    <line x1="330" y1="510" x2="400" y2="420" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+    
+    <!-- VIF to DUT -->
+    <line x1="330" y1="585" x2="620" y2="350" stroke="#4caf50" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+    <text x="475" y="460" text-anchor="middle" fill="#4caf50" font-size="11" font-weight="bold" font-family="Arial, sans-serif">AXI4-Lite Signals</text>
+    
+    <!-- Arrow marker definitions -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+        </marker>
+        <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#4caf50"/>
+        </marker>
+    </defs>
+    
+    <!-- Legend -->
+    <rect x="20" y="650" width="860" height="40" fill="white" stroke="#333" stroke-width="1" rx="3"/>
+    <text x="30" y="670" fill="#333" font-size="10" font-family="Arial, sans-serif">UVM Hierarchy: Test → Environment → Agent (Sequencer, Driver, Monitor) → DUT</text>
+    <text x="30" y="683" fill="#333" font-size="9" font-family="Arial, sans-serif">Data Flow: Sequences generate transactions → Driver applies to DUT → Monitor observes → Scoreboard checks</text>
+</svg>
